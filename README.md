@@ -1,39 +1,49 @@
 # stringer
 
-TODO: Write a description here
+Useful utilities patched on top of the lovely [crystal's](https://crystal-lang.org/) [String](https://crystal-lang.org/reference/syntax_and_semantics/literals/string.html).
 
-## Installation
+<img src="thomas-kelley-78865-unsplash.jpg" alt="Photo by Thomas Kelley on Unsplash" width="600px" />
 
-1. Add the dependency to your `shard.yml`:
+## Project Health Status
 
-   ```yaml
-   dependencies:
-     stringer:
-       github: your-github-user/stringer
-   ```
+`TODO: add badges in here`
 
-2. Run `shards install`
+## Getting Started
 
-## Usage
+Add the dependency to your `shard.yml`:
+
+```yaml
+dependencies:
+  stringer:
+    github: cmd-coffee/stringer
+```
+
+Install your shards:
+
+```sh
+> shards install
+```
+
+Require it:
 
 ```crystal
 require "stringer"
 ```
 
-TODO: Write usage instructions here
+Strum along:
 
-## Development
+```crystal
+strum = "The quick brown fox jumps over the lazy dog"
+strum.truncate(28) # => "The quick brown fox jumps..."
 
-TODO: Write development instructions here
+strum = "  some \t\n messy\ttxt \n\t   "
+strum.squish #=> "some messy txt"
+```
 
 ## Contributing
 
-1. Fork it (<https://github.com/your-github-user/stringer/fork>)
+1. Fork it (<https://github.com/cmd-coffee/stringer/fork>)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
 5. Create a new Pull Request
-
-## Contributors
-
-- [Evan Closson](https://github.com/your-github-user) - creator and maintainer
