@@ -1,9 +1,11 @@
 name: stringer
 version: 0.1.0
-
+crystal: 0.29.0
+license: MIT
 authors:
   - Evan Closson <evan@evanclosson.com>
 
-crystal: 0.29.0
-
-license: MIT
+development_dependencies:
+  ameba:
+    github: veelenga/ameba
+    version: ~> 0.10.0

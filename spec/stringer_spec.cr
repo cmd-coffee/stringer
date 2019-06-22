@@ -62,6 +62,5 @@ describe Stringer do
     it "works with empty string" do
       "".squish.should eq("")
     end
-
   end
 end

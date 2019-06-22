@@ -2,11 +2,11 @@
 
 Useful utilities patched on top of the lovely [crystal's](https://crystal-lang.org/) [String](https://crystal-lang.org/reference/syntax_and_semantics/literals/string.html).
 
-<img src="thomas-kelley-78865-unsplash.jpg" alt="Photo by Thomas Kelley on Unsplash" width="600px" />
+<img src="thomas-kelley-78865-unsplash.jpg" alt="Photo by Thomas Kelley on Unsplash" width="100%" />
 
 ## Project Health Status
 
-`TODO: add badges in here`
+[![CircleCI](https://circleci.com/gh/cmd-coffee/stringer.svg?style=shield)](https://circleci.com/gh/cmd-coffee/stringer)
 
 ## Getting Started
 
@@ -37,7 +37,7 @@ strum = "The quick brown fox jumps over the lazy dog"
 strum.truncate(28) # => "The quick brown fox jumps..."
 
 strum = "  some \t\n messy\ttxt \n\t   "
-strum.squish #=> "some messy txt"
+strum.squish # => "some messy txt"
 ```
 
 ## Contributing

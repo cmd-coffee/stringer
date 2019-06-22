@@ -21,9 +21,9 @@ module Stringer
   #
   # ```
   # strum = "The quick brown fox jumps over the lazy dog"
-  # strum.truncate(20) #=> "The quick brown f..."
-  # strum.truncate(20, {:omission => "!!!"}) #=> "The quick brown f!!!"
-  # strum.truncate(20, {:separator => " "}) #=> "The quick brown..."
+  # strum.truncate(20)                       # => "The quick brown f..."
+  # strum.truncate(20, {:omission => "!!!"}) # => "The quick brown f!!!"
+  # strum.truncate(20, {:separator => " "})  # => "The quick brown..."
   # ```
   #
   # Hat tip to Ruby on Rails inflections [String#truncate](https://api.rubyonrails.org/classes/String.html#method-i-truncate)
@@ -47,10 +47,10 @@ module Stringer
   #
   # ```
   # strum = "  some \t\n messy\ttxt \n\t   "
-  # strum.squish #=> "some messy txt"
+  # strum.squish # => "some messy txt"
   # ```
   #
-  # Hat tip to Ruby on Rails inflections [String#squish](https://api.rubyonrails.org/classes/String.html#method-i-squish)  
+  # Hat tip to Ruby on Rails inflections [String#squish](https://api.rubyonrails.org/classes/String.html#method-i-squish)
   def squish
     self.strip.gsub(/\s+/, ' ')
   end
